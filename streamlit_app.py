@@ -179,3 +179,5 @@ if st.button("Translate"):
         st.write("##### == Relevant Medical Terms and Explanations ====")
         for explanation in explanations:
             st.write(explanation)
+    else:
+        st.warning("Please enter text to translate.")
