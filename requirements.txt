@@ -1,0 +1,6 @@
+transformers
+torch
+pandas
+sentence-transformers
+scikit-learn
+streamlit==1.25.0
