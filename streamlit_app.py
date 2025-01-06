@@ -160,7 +160,11 @@ st.write("""### Inference""")
 
 
 # Input text
-input_text = st.text_area("Enter text to translate to Hausa:")
+input_text = st.text_area(
+    "Enter text to translate to Hausa:", # Label outside the text area
+    placeholder="I will be administering the IV (Intravenous) to your child" # Placeholder text inside the text area
+)
+
 
 # Button and spinner
 if st.button("Translate"):
