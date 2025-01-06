@@ -168,10 +168,10 @@ if st.button("Translate"):
         with st.spinner("Translating, please wait..."):
             translated_text, explanations = run_inference_pipeline(input_text, emt_df, translation_model_name)
         st.success("Translation complete!")
-        st.write("#### == Original Text ====")
+        st.write("##### == Original Text ====")
         st.write(input_text)
-        st.write("#### == Translated Text ====")
+        st.write("##### == Translated Text ====")
         st.write(translated_text)
-        st.write("#### == Relevant Medical Terms and Explanations ====")
+        st.write("##### == Relevant Medical Terms and Explanations ====")
         for explanation in explanations:
             st.write(explanation)
